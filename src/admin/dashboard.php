@@ -85,11 +85,7 @@ $result = mysqli_query($conn, $query);
             <div class="col-6">
               <h6 class="m-0 font-weight-bold text-primary mt-2">NIK : <?= $row['nik']; ?></h6>
             </div>
-            <div class="col-6">
-              <div class="d-sm-flex align-items-center justify-content-end">
-                <a href="#" class="d-none d-sm-inline-block btn btn-sm btn-primary shadow-sm"><i class="fas fa-download fa-sm text-white-50"></i> Cetak Laporan</a>
-              </div>
-            </div>
+            
           </div>
         </div>
         <div class="collapse show" id="generate">

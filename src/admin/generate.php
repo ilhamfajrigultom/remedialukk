@@ -33,14 +33,9 @@ $result = mysqli_query($conn, $query);
     </form>
   </div>
   <div class="col-6">
-    <div class="d-flex justify-content-end">
-      <div class="card shadow col-6 py-2" data-aos="zoom-in">
-        <a href="#generate" class="d-block card-header " data-toggle="collapse" role="button" aria-expanded="true" aria-controls="generate">
-          <h6 class="m-0 font-weight-bold text-primary">Tutup Laporan</h6>
-        </a>
-      </div>
-    </div>
-  </div>
+    <div class="modal-footer">
+              <button type="button" class="btn btn-primary" onclick="javascript:window.print()"><span class="fa fa-print"></span> Cetak Laporan</button>
+            </div>
 </div>
 
 <hr>
@@ -56,11 +51,7 @@ $result = mysqli_query($conn, $query);
             <div class="col-6">
               <h6 class="m-0 font-weight-bold text-primary mt-2">NIK : <?= $row['nik']; ?></h6>
             </div>
-            <div class="col-6">
-              <div class="d-sm-flex align-items-center justify-content-end">
-                <a href="#" class="d-none d-sm-inline-block btn btn-sm btn-primary shadow-sm"><i class="fas fa-download fa-sm text-white-50"></i> Generate Report</a>
-              </div>
-            </div>
+            
           </div>
         </div>
         <div class="collapse show" id="generate">

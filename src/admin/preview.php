@@ -31,8 +31,8 @@ $result = mysqli_query($conn, $query);
             <h6 class="m-0 font-weight-bold text-primary mt-2">NIK : <?= $row['nik']; ?></h6>
           </div>
           <div class="col-6">
-            <div class="d-sm-flex align-items-center justify-content-end">
-              <a href="#" class="d-none d-sm-inline-block btn btn-sm btn-primary shadow-sm"><i class="fas fa-download fa-sm text-white-50"></i> Generate Report</a>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-primary" onclick="javascript:window.print()"><span class="fa fa-print"></span> Cetak Laporan</button>
             </div>
           </div>
         </div>
